@@ -85,21 +85,3 @@ exports.Sum = Sum;
 var myWords = ['Kimetsu no Yaiba', 'Yokai Watch', 'Re:Zero'];
 var sum = new Sum(myWords);
 console.log("sum of the words is ".concat(sum.add()));
-// export class Number {
-//     public number: number;
-//     //constructor
-//     constructor(number: number) {
-//         this.number = number;
-//     }
-//     public  isEven():string{
-//         if (this.number % 2 === 0){
-//             return 'El numero es par';
-//         } else {
-//             return 'El numero es impar';
-//         }
-//     }
-// }
-// let enterNumber = new Number(489);
-// let numbers = enterNumber.number;
-// let result = enterNumber.isEven();
-// console.log(`${numbers} : ${result}`);
