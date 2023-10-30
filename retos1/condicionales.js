@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Continent = exports.ZodiacSign = void 0;
+exports.Number = exports.Continent = exports.ZodiacSign = void 0;
+//2
 var ZodiacSign = /** @class */ (function () {
     //constructor
     function ZodiacSign(day, month) {
@@ -93,6 +94,7 @@ var month = zodiacSign.getMonth();
 var zodiacName = zodiacSign.zodiac();
 console.log("(Day,Month) ".concat(day, ".").concat(month, ":").concat(zodiacName));
 //**********************************************************
+//3
 var Continent = /** @class */ (function () {
     //constructor
     function Continent(countryName) {
@@ -132,3 +134,25 @@ var continent = new Continent('Spain');
 var country = continent.countryName;
 var continentName = continent.continents();
 console.log("country:".concat(country, "\ncontinent:").concat(continentName));
+//********************************************************************
+//4
+var Number = /** @class */ (function () {
+    //constructor
+    function Number(number) {
+        this.number = number;
+    }
+    Number.prototype.isEven = function () {
+        if (this.number % 2 === 0) {
+            return 'El numero es par';
+        }
+        else {
+            return 'El numero es impar';
+        }
+    };
+    return Number;
+}());
+exports.Number = Number;
+var enterNumber = new Number(489);
+var numbers = enterNumber.number;
+var result = enterNumber.isEven();
+console.log("".concat(numbers, " : ").concat(result));
