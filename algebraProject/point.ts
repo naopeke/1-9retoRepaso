@@ -58,5 +58,12 @@ export class Point {
         }
     }
 
+    //reto4
+    // public calculateNearest(points : Point[]) : Point {
+    //     let firstPoint = new Point[1]
+    //     let distance = this.calculateDistance()
+    // }
+
+
 }
 
