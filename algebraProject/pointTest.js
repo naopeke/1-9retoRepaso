@@ -1,5 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var point_1 = require("./point");
-var myPoint = new point_1.Point(5, 10);
-console.log(myPoint.toString());
+var myPoint1 = new point_1.Point(5, 10);
+console.log(myPoint1.toString());
+var distanceToOrigin = myPoint1.distanceTolOrigin();
+console.log("distance to origin : ".concat(distanceToOrigin));
+var myPoint2 = new point_1.Point(13, 15);
+var distanceToAnotherPoint = myPoint1.calculateDistance(myPoint2);
+console.log("distance to another point : ".concat(distanceToAnotherPoint));
