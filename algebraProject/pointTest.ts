@@ -13,3 +13,16 @@ console.log(`distance to origin : ${distanceToOrigin}`);
 let myPoint2 = new Point(13, 15);
 let distanceToAnotherPoint = myPoint1.calculateDistance(myPoint2);
 console.log(`distance to another point : ${distanceToAnotherPoint}`);
+
+//método calcular cuadrante
+//setter
+myPoint1.x = 10;
+myPoint1.y = -5;
+//getter
+console.log(`new point x is ${myPoint1.x}`);
+console.log(`new point y is ${myPoint1.y}`);
+//toString
+console.log(myPoint1.toString());
+//resulto
+let result = myPoint1.calcularQuadrant();
+console.log(result);

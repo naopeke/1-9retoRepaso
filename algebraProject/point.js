@@ -9,7 +9,7 @@ var Point = /** @class */ (function () {
     Object.defineProperty(Point.prototype, "x", {
         //método getters
         get: function () {
-            return this.x;
+            return this._x;
         },
         //método setters
         set: function (_x) {
@@ -19,6 +19,9 @@ var Point = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(Point.prototype, "y", {
+        get: function () {
+            return this._y;
+        },
         set: function (_y) {
             this._y = _y;
         },
@@ -36,6 +39,24 @@ var Point = /** @class */ (function () {
     //reto 2 : another point
     Point.prototype.calculateDistance = function (anotherPoint) {
         return Math.sqrt(Math.pow(this._x - anotherPoint._x, 2) + Math.pow(this._y - anotherPoint._y, 2));
+    };
+    //reto 3 : calcular cuadrante
+    Point.prototype.calcularQuadrant = function () {
+        if (this._x === 0 || this._y === 0) {
+            return 0;
+        }
+        else if (this._x > 0 || this._y > 0) {
+            return 1;
+        }
+        else if (this._x < 0 || this._y > 0) {
+            return 2;
+        }
+        else if (this._x < 0 || this._y < 0) {
+            return 3;
+        }
+        else {
+            return 4;
+        }
     };
     return Point;
 }());
