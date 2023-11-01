@@ -58,6 +58,15 @@ var Point = /** @class */ (function () {
             return 4;
         }
     };
+    //reto4
+    Point.prototype.calculateNearest = function (points) {
+        var _this = this;
+        var nearestPoint = points.reduce(function (currentPoint, point) {
+            return _this.calculateDistance(point) < _this.calculateDistance(currentPoint) ?
+                point : currentPoint;
+        }, points[0]);
+        return nearestPoint;
+    };
     return Point;
 }());
 exports.Point = Point;

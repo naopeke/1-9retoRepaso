@@ -59,10 +59,15 @@ export class Point {
     }
 
     //reto4
-    // public calculateNearest(points : Point[]) : Point {
-    //     let firstPoint = new Point[1]
-    //     let distance = this.calculateDistance()
-    // }
+    public calculateNearest(points : Point[]) : Point {
+        let nearestPoint = points.reduce((currentPoint, point) => {
+            return this.calculateDistance(point) <  this.calculateDistance(currentPoint) ?
+            point : currentPoint
+        }, points[0]);
+
+        return nearestPoint;
+        }
+ //points.reduce((a, b) => this.calculateDistance(a)< this.calculateDistance(b) ? a:b)} ,0);
 
 
 }

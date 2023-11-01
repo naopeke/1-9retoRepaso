@@ -16,10 +16,15 @@ console.log("distance to another point : ".concat(distanceToAnotherPoint));
 myPoint1.x = 10;
 myPoint1.y = -5;
 //getter
-console.log("new point x is ".concat(myPoint1.x));
-console.log("new point y is ".concat(myPoint1.y));
+console.log("new point x : ".concat(myPoint1.x));
+console.log("new point y : ".concat(myPoint1.y));
 //toString
 console.log(myPoint1.toString());
 //resulto
 var result = myPoint1.calcularQuadrant();
-console.log(result);
+console.log("the result of calcularQuadrant is ".concat(result));
+//reto4
+var currentPoint = new point_1.Point(5, 10);
+var pointsArr = [new point_1.Point(1, 1), new point_1.Point(3, 3), new point_1.Point(5, 5), new point_1.Point(4, 9)];
+var nearestPoint = currentPoint.calculateNearest(pointsArr);
+console.log("nearest point : (".concat(nearestPoint.x, ",").concat(nearestPoint.y, ")"));
