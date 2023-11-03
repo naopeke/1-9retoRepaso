@@ -21,8 +21,10 @@ export class OddNumbers {
 let oddNumbers = new OddNumbers(5);
 oddNumbers.evenNumbers();
 
+
 //*********************************************************
 //3
+ 
 export class Revert {
     public myArr: number[];
 
