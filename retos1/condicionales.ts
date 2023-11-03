@@ -108,30 +108,52 @@ export class Continent {
     // }
 
     public continents ():string{
-        if (this.countryName === 'Spain' || this.countryName === 'France' || this.countryName === 'Portugal'){
-            return 'Europa'
-        } else if (this.countryName === 'Japan' || this.countryName === 'North Corea' || this.countryName === 'China'){
-            return 'Asia'
-        } else if (this.countryName === 'Egypt' || this.countryName === 'Tanzania' || this.countryName === 'Morocco'){
-            return 'Africa'
-        } else if (this.countryName === 'Canada' || this.countryName === 'USA' || this.countryName === 'Cuba'){
-            return 'North Ameria'
-        } else if (this.countryName === 'Argentin' || this.countryName === 'Peru' || this.countryName === 'Urguay'){
-            return 'South America'
-        } else if (this.countryName=== 'New Zealand' || this.countryName === 'Australia' || this.countryName === 'Palau'){
-            return 'Oseania'
-        }
-        else {
-            return 'undefined';
+        // if (this.countryName === 'Spain' || this.countryName === 'France' || this.countryName === 'Portugal'){
+        //     return 'Europa'
+        // } else if (this.countryName === 'Japan' || this.countryName === 'North Corea' || this.countryName === 'China'){
+        //     return 'Asia'
+        // } else if (this.countryName === 'Egypt' || this.countryName === 'Tanzania' || this.countryName === 'Morocco'){
+        //     return 'Africa'
+        // } else if (this.countryName === 'Canada' || this.countryName === 'USA' || this.countryName === 'Cuba'){
+        //     return 'North Ameria'
+        // } else if (this.countryName === 'Argentin' || this.countryName === 'Peru' || this.countryName === 'Urguay'){
+        //     return 'South America'
+        // } else if (this.countryName=== 'New Zealand' || this.countryName === 'Australia' || this.countryName === 'Palau'){
+        //     return 'Oseania'
+        // }
+        // else {
+        //     return 'undefined';
+        // }
+
+            let resultado:string = "";
+            if (this.countryName === 'Spain' || this.countryName === 'France' || this.countryName === 'Portugal'){
+                resultado = 'Europa'
+            } else if (this.countryName === 'Japan' || this.countryName === 'North Corea' || this.countryName === 'China'){
+                 resultado = 'Asia'
+            } else if (this.countryName === 'Egypt' || this.countryName === 'Tanzania' || this.countryName === 'Morocco'){
+                 resultado = 'Africa'
+            } else if (this.countryName === 'Canada' || this.countryName === 'USA' || this.countryName === 'Cuba'){
+                 resultado = 'North Ameria'
+            } else if (this.countryName === 'Argentin' || this.countryName === 'Peru' || this.countryName === 'Urguay'){
+                 resultado = 'South America'
+            } else if (this.countryName=== 'New Zealand' || this.countryName === 'Australia' || this.countryName === 'Palau'){
+                 resultado = 'Oseania'
+            }
+            else {
+                 resultado = 'undefined';
+            }
+             return resultado
         }
     }
-}
+
 
 let continent = new Continent ('Spain');
 let country = continent.countryName;
 let continentName = continent.continents();
 
 console.log(`country:${country}\ncontinent:${continentName}`);
+
+
 
 
 
