@@ -42,5 +42,5 @@ var NameM = /** @class */ (function () {
     return NameM;
 }());
 exports.NameM = NameM;
-var arrayName = new NameM(['Miguel', 'Mike', 'Nancy']);
-console.log(arrayName.startWithM());
+var myNames = new NameM(['Miguel', 'Mike', 'Nancy']);
+console.log(myNames.startWithM());
