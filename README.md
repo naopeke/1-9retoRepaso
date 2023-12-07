@@ -1,2 +1,8 @@
 # 1-9retoRepaso
-1-9 reto repaso
+<ul>
+  <li>Class Point</li>
+  <li>Métodos de Distancias</li>
+  <li>Método Calcular Cuadrante</li>
+  <li>Calcular el Punto Más Cercano</li>
+  <li>Class Triangle con Typescript</li>
+</ul>
